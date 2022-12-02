@@ -1,0 +1,18 @@
+[32m2022-12-02 17:08:43 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 70913242-a858-495d-9123-e50da046c545 - 37285 - LOGS_CAPTURED - Started capturing logs in process (pid: 37285).
+[32m2022-12-02 17:08:43 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 70913242-a858-495d-9123-e50da046c545 - 37285 - load_table - STEP_START - Started execution of step "load_table".
+[32m2022-12-02 17:08:43 -0500[0m - dagster - [34mERROR[0m - [31mmatriz_data - 70913242-a858-495d-9123-e50da046c545 - 37285 - load_table - STEP_FAILURE - Execution of step "load_table" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "load_table"::
+
+TypeError: cannot unpack non-iterable Connection object
+
+Stack Trace:
+  File "/Users/fabio/miniforge3/envs/dagsterETL/lib/python3.9/site-packages/dagster/_core/execution/plan/utils.py", line 47, in solid_execution_error_boundary
+    yield
+  File "/Users/fabio/miniforge3/envs/dagsterETL/lib/python3.9/site-packages/dagster/_utils/__init__.py", line 447, in iterate_with_context
+    next_output = next(iterator)
+  File "/Users/fabio/miniforge3/envs/dagsterETL/lib/python3.9/site-packages/dagster/_core/execution/plan/compute_generator.py", line 74, in _coerce_solid_compute_fn_to_iterator
+    result = fn(context, **kwargs) if context_arg_provided else fn(**kwargs)
+  File "/Users/fabio/Documents/dagster_home/etldagster/etldagster/ops/etl.py", line 9, in load_table
+    cur, conn = create_database()
+[0m
