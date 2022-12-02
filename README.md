@@ -1,6 +1,22 @@
 # etldagster
 
 This is a [Dagster](https://dagster.io/) project scaffolded with [`dagster project scaffold`](https://docs.dagster.io/getting-started/create-new-project).
+This project aims to create an ETL with the orchestrator tool Dagster. One simple job to retrive information from a Excel file and load it into a Postgres database.
+
+## Database schema
+
+There is just one table that stores the data from a matrix in an Excel file
+The matrix was stacked to be represented in a relational table with 3 columns, **row**, **col** and **val**
+row and col columns are the compound keys
+
+## Transformations
+
+The data from the matrix was transformed using the pandas library, the file was read with read_excel function and stacked with the stack function
+
+## Orchestration
+
+Within Dagster an ops was created to make the database operations and data transformation
+The job took this operation and the schedule set a daily run at 10am
 
 ## Getting started
 
