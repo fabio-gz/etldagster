@@ -8,7 +8,8 @@ setup(
         "pandas",
         "psycopg2",
         "configparser",
-        "openpyxl"
+        "openpyxl",
+        "sqlalchemy"
     ],
     extras_require={"dev": ["dagit", "pytest"]},
 )
