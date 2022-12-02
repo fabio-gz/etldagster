@@ -1,6 +1,0 @@
-(psycopg2.errors.SyntaxError) syntax error at or near "("
-LINE 1: ...VARCHAR(10), col VARCHAR(10), val INT PRIMARY KEY (row, col)...
-                                                             ^
-
-[SQL: CREATE TABLE IF NOT EXISTS matrizinfo(row VARCHAR(10), col VARCHAR(10), val INT PRIMARY KEY (row, col));]
-(Background on this error at: https://sqlalche.me/e/14/f405)

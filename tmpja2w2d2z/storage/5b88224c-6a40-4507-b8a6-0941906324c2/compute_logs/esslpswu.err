@@ -1,6 +1,0 @@
-[32m2022-12-02 17:12:58 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 5b88224c-6a40-4507-b8a6-0941906324c2 - 37582 - LOGS_CAPTURED - Started capturing logs in process (pid: 37582).
-[32m2022-12-02 17:12:58 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 5b88224c-6a40-4507-b8a6-0941906324c2 - 37582 - load_table - STEP_START - Started execution of step "load_table".
-[32m2022-12-02 17:12:59 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 5b88224c-6a40-4507-b8a6-0941906324c2 - 37582 - load_table - STEP_OUTPUT - Yielded output "result" of type "Any". (Type check passed).
-[32m2022-12-02 17:12:59 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 5b88224c-6a40-4507-b8a6-0941906324c2 - load_table - Writing file at: /Users/fabio/Documents/dagster_home/etldagster/tmpja2w2d2z/storage/5b88224c-6a40-4507-b8a6-0941906324c2/load_table/result
-[32m2022-12-02 17:12:59 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 5b88224c-6a40-4507-b8a6-0941906324c2 - 37582 - load_table - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
-[32m2022-12-02 17:12:59 -0500[0m - dagster - [34mDEBUG[0m - matriz_data - 5b88224c-6a40-4507-b8a6-0941906324c2 - 37582 - load_table - STEP_SUCCESS - Finished execution of step "load_table" in 294ms.
